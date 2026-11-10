@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="268" viewBox="0 0 800 268" role="img" aria-labelledby="title description">
 <title id="title">Calibrate predictions for three outcomes</title>
-<desc id="description">NHANES 24-hour dietary recalls are inputs to stacked neural networks. Probabilities are calibrated separately for hypertension, diabetes and thyroid dysfunction, then evaluated at decision thresholds.</desc>
+<desc id="description">Use 24-hour dietary recalls to build calibrated models. Evaluate fixed thresholds for hypertension as the primary outcome and for two secondary outcomes, type 2 diabetes and thyroid disorder.</desc>
 <style>
 text{font-family:Arial,Helvetica,sans-serif}.label{fill:#145c55;font-size:12px;font-weight:700;letter-spacing:1px}.heading{fill:#132c3a;font-size:30px;font-weight:700}.card{fill:#132c3a;font-size:15px;font-weight:700}.body{fill:#304d5a;font-size:14px}
 </style>
@@ -11,5 +11,5 @@ text{font-family:Arial,Helvetica,sans-serif}.label{fill:#145c55;font-size:12px;f
 <g fill="none" stroke="#347c76" stroke-width="2" marker-end="url(#arrow)"><path d="M261 178H282"/><path d="M515 178H536"/></g>
 <g transform="translate(32 115)"><rect width="228" height="126" rx="12" fill="#dcefeb" stroke="#afc9c7"/><text x="16" y="26" class="label">01 / INPUTS</text><text x="16" y="56" class="card">24-hour dietary recalls</text><text x="16" y="80" class="body">NHANES dietary features</text></g>
 <g transform="translate(286 115)"><rect width="228" height="126" rx="12" fill="#ffffff" stroke="#afc9c7"/><text x="16" y="26" class="label">02 / MODELLING</text><text x="16" y="56" class="card">Stack and calibrate</text><text x="16" y="80" class="body">Combine neural network</text><text x="16" y="98" class="body">predictions by outcome</text></g>
-<g transform="translate(540 115)"><rect width="228" height="126" rx="12" fill="#ffffff" stroke="#afc9c7"/><text x="16" y="26" class="label">03 / EVALUATION</text><text x="16" y="56" class="card">Compare thresholds</text><text x="16" y="80" class="body">Evaluate precision, recall</text><text x="16" y="98" class="body">and alerts per 1,000</text></g>
+<g transform="translate(540 115)"><rect width="228" height="126" rx="12" fill="#ffffff" stroke="#afc9c7"/><text x="16" y="26" class="label">03 / EVALUATION</text><text x="16" y="56" class="card">Test fixed thresholds</text><text x="16" y="80" class="body">Hypertension is primary</text><text x="16" y="98" class="body">Assess two secondary outcomes</text></g>
 </svg>
