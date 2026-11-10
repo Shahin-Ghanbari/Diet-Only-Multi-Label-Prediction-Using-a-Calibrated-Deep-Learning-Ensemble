@@ -1,14 +1,14 @@
 # Diet-Only Multi-Label Prediction Using a Calibrated Deep Learning Ensemble
 
-A research notebook exploring whether 24-hour dietary recalls can support prediction of multiple health outcomes.
+This research notebook evaluates whether 24-hour dietary recalls alone can support calibrated risk stratification for three health outcomes.
 
-![NHANES 24-hour dietary recalls are inputs to stacked neural networks. Probabilities are calibrated separately for hypertension, diabetes and thyroid dysfunction, then evaluated at decision thresholds.](research-workflow.svg)
+![Use 24-hour dietary recalls to build calibrated models. Evaluate fixed thresholds for hypertension as the primary outcome and for two secondary outcomes, type 2 diabetes and thyroid disorder.](research-workflow.svg)
 
 | | |
 | --- | --- |
-| **Research question** | How well can dietary information alone support prediction of hypertension, diabetes and thyroid dysfunction? |
-| **Data** | Dietary recall data from the US National Health and Nutrition Examination Survey (NHANES). |
-| **Method** | Train neural networks, combine their predictions through per-outcome stacking and calibrate probabilities. Compare thresholds using precision, recall and alerts per 1,000 people screened, and explore model explanations with SHAP. |
+| **Research question** | Can dietary recall alone support calibrated risk stratification, with hypertension as the primary outcome and type 2 diabetes and thyroid disorder as secondary outcomes? |
+| **Data** | 24-hour dietary recalls from adult NHANES participants. |
+| **Method** | Combine neural network predictions through per-outcome stacking and calibrate probabilities. Select thresholds on validation data and assess precision, recall and alerts per 1,000 on held-out data. Explore model explanations with SHAP. |
 
 ## Notebook and data
 
