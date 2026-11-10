@@ -10,6 +10,10 @@ This research notebook evaluates whether 24-hour dietary recalls alone can suppo
 | **Data** | 24-hour dietary recalls from adult NHANES participants. |
 | **Method** | Combine neural network predictions through per-outcome stacking and calibrate probabilities. Select thresholds on validation data and assess precision, recall and alerts per 1,000 on held-out data. Explore model explanations with SHAP. |
 
+## My contribution
+
+I prepared the data, implemented the modelling and calibration workflow, and evaluated how decision thresholds affected screening workload. My co-authors provided guidance on the study approach and reviewed the manuscript.
+
 ## What you can explore
 
 The research notebook contains the modelling, calibration and threshold evaluation workflow. The diagram above summarises those steps.
