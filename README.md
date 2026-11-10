@@ -2,7 +2,7 @@
 
 This research notebook evaluates whether 24-hour dietary recalls alone can support calibrated risk stratification for three health outcomes.
 
-![Use 24-hour dietary recalls to build calibrated models. Evaluate fixed thresholds for hypertension as the primary outcome and for two secondary outcomes, type 2 diabetes and thyroid disorder.](research-workflow.svg)
+![Stack and calibrate diet-only models using NHANES 24-hour dietary recalls. Test fixed thresholds for hypertension, the primary outcome, and for type 2 diabetes and thyroid disorder, the secondary outcomes.](research-workflow.svg)
 
 | | |
 | --- | --- |
