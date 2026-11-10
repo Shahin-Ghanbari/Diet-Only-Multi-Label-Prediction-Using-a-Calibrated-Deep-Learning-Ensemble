@@ -1,18 +1,23 @@
 # Diet-Only Multi-Label Prediction Using a Calibrated Deep Learning Ensemble
 
-This repository contains the code for a diet-only, multi-label prediction pipeline built on NHANES 24-hour dietary recall data. The project trains multiple neural network models, combines them via per-label stacking, applies per-label probability calibration, and evaluates threshold-based decision metrics (including workload per 1,000 screened). Model explanations are provided using SHAP.
+A research notebook that investigates whether 24-hour dietary recalls can support multi-label prediction for hypertension, diabetes, and thyroid dysfunction.
+
+[Open the research notebook](Final_Code.ipynb) · [Explore the NHANES data source](https://www.cdc.gov/nchs/nhanes/about/index.html)
+
+## Research workflow
+
+1. Use dietary features from the National Health and Nutrition Examination Survey (NHANES).
+2. Train neural network models and combine their outputs through per-label stacking.
+3. Calibrate probabilities for each condition.
+4. Evaluate decision thresholds using precision, recall, and the number of alerts per 1,000 people screened.
+5. Examine model predictions using SHAP.
+
+## Data and reproduction
+
+The repository contains [`Final_Code.ipynb`](Final_Code.ipynb). The NHANES datasets are available from the CDC and must be obtained separately. Review the notebook's data-loading cells for the expected inputs and local paths before running it.
 
 ## Paper
-**Diet-Only Multi-Label Prediction of Hypertension, Diabetes, and Thyroid Dysfunction Using a Calibrated Deep Learning Ensemble**  
-Authors: Shahin Ghanbari, Elaheh Homayounvala, Sahar Al-Sudani
 
-## Key idea (one paragraph)
-Many prediction systems rely on clinical or demographic inputs that may be unavailable. This work evaluates whether *diet-only* features (NHANES 24-hour recalls) can support multi-condition risk prediction using a multi-label deep learning pipeline. The system produces calibrated probabilities suitable for fixed, threshold-based decision policies and reports operational metrics such as precision/recall and alerts per 1,000 screened.
+**Diet-Only Multi-Label Prediction of Hypertension, Diabetes, and Thyroid Dysfunction Using a Calibrated Deep Learning Ensemble**
 
-## Data
-This project uses publicly available NHANES data:
-- NHANES overview: https://www.cdc.gov/nchs/nhanes/about/index.html
-
-**Important:** NHANES datasets are not included in this repository. You must download them from the CDC website and place them in the expected data directory structure.
-
-## Repository structure
+Shahin Ghanbari, Elaheh Homayounvala, and Sahar Al-Sudani
