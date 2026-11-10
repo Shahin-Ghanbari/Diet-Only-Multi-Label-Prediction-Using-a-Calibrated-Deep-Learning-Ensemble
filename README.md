@@ -2,6 +2,8 @@
 
 A research notebook exploring whether 24-hour dietary recalls can support prediction of multiple health outcomes.
 
+![NHANES 24-hour dietary recalls are inputs to stacked neural networks. Probabilities are calibrated separately for hypertension, diabetes and thyroid dysfunction, then evaluated at decision thresholds.](research-workflow.svg)
+
 | | |
 | --- | --- |
 | **Research question** | How well can dietary information alone support prediction of hypertension, diabetes and thyroid dysfunction? |
